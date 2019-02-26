@@ -12,4 +12,12 @@ export class TodosComponent implements OnInit {
   ngOnInit() {
   }
 
+  public grabarEvent(target) {
+    console.log('target: ', target);
+  }
+
+  public cancelarEvent(target) {
+    console.log('target: ', target);
+  }
+
 }

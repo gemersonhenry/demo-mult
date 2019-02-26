@@ -9,6 +9,7 @@ import { SaludComponent } from './views/salud/salud.component';
 import { HogarComponent } from './views/hogar/hogar.component';
 import { NormalButtonComponent } from './components/normal-button/normal-button.component';
 import { LinkButtonComponent } from './components/link-button/link-button.component';
+import { FiltersComponent } from './components/filters/filters.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { LinkButtonComponent } from './components/link-button/link-button.compon
     SaludComponent,
     HogarComponent,
     NormalButtonComponent,
-    LinkButtonComponent
+    LinkButtonComponent,
+    FiltersComponent
   ],
   imports: [
     BrowserModule,
