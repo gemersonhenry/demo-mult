@@ -1,3 +1,8 @@
-<p>
-  list works!
-</p>
+<div class="row">
+  <div *ngFor="let serv of services" class="col-sm-4">
+    <app-card [cardTitle]="serv.name" [cardText]="serv.description" [cardData]="serv" 
+      (deleteServiceEvent)="deleteService($event)"
+      (editServiceEvent)="editService($event)">
+    </app-card>
+  </div>
+</div>

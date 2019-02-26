@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ServiceTypeStoreService } from 'src/app/store/service-type-store.service';
+import { ServiceModel } from 'src/app/models/main';
 
 @Component({
   selector: 'app-salud',
@@ -7,9 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SaludComponent implements OnInit {
 
-  constructor() { }
+  public services: ServiceModel[];
+
+  constructor(
+    private stStore: ServiceTypeStoreService
+  ) { }
 
   ngOnInit() {
+    this.stStore.$saludServices.subscribe((services) => {
+      console.log('salud component', services);
+      this.services = services;
+    });
   }
 
 }

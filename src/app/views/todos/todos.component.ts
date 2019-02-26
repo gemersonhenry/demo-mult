@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ServiceModel } from 'src/app/models/main';
+import { ServiceTypeStoreService } from 'src/app/store/service-type-store.service';
 
 @Component({
   selector: 'app-todos',
@@ -7,17 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TodosComponent implements OnInit {
 
-  constructor() { }
+  public services: ServiceModel[];
+
+  constructor(
+    private stStore: ServiceTypeStoreService
+  ) { }
 
   ngOnInit() {
-  }
-
-  public grabarEvent(target) {
-    console.log('target: ', target);
-  }
-
-  public cancelarEvent(target) {
-    console.log('target: ', target);
+    this.stStore.$todosServices.subscribe((services) => {
+      console.log('salud component', services);
+      this.services = services;
+    });
   }
 
 }

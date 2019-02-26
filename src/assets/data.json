@@ -1,0 +1,58 @@
+{
+  "servicios": [
+    {
+      "id": 1,
+      "name": "Electricidad",
+      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "serviceType": "hogar"
+    },
+    {
+      "id": 2,
+      "name": "Ambulancia",
+      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "serviceType": "salud"
+    },
+    {
+      "id": 3,
+      "name": "Gasfitero",
+      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "serviceType": "hogar"
+    },
+    {
+      "id": 4,
+      "name": "Bombero",
+      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "serviceType": "hogar"
+    },
+    {
+      "id": 5,
+      "name": "Medico a domicilio",
+      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "serviceType": "salud"
+    },
+    {
+      "id": 6,
+      "name": "Chofer de reemplazo",
+      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "serviceType": "autos"
+    },
+    {
+      "id": 7,
+      "name": "Auxilio mecanico",
+      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "serviceType": "autos"
+    },
+    {
+      "id": 8,
+      "name": "Taller mecanico",
+      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "serviceType": "autos"
+    },
+    {
+      "id": 9,
+      "name": "Seguro de salud",
+      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "serviceType": "salud"
+    }
+  ]
+}

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ServiceTypeStoreService } from 'src/app/store/service-type-store.service';
+import { ServiceModel } from 'src/app/models/main';
 
 @Component({
   selector: 'app-autos',
@@ -7,9 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AutosComponent implements OnInit {
 
-  constructor() { }
+  public services: ServiceModel[];
+
+  constructor(
+    private stStore: ServiceTypeStoreService
+  ) { }
 
   ngOnInit() {
+    this.stStore.$autosServices.subscribe((services) => {
+      console.log('autos component', services);
+      this.services = services;
+    });
   }
 
 }

@@ -12,6 +12,8 @@ import { LinkButtonComponent } from './components/link-button/link-button.compon
 import { FiltersComponent } from './components/filters/filters.component';
 import { CardComponent } from './components/card/card.component';
 import { ListComponent } from './components/list/list.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormComponent } from './components/form/form.component';
 
 @NgModule({
   declarations: [
@@ -24,11 +26,13 @@ import { ListComponent } from './components/list/list.component';
     LinkButtonComponent,
     FiltersComponent,
     CardComponent,
-    ListComponent
+    ListComponent,
+    FormComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
