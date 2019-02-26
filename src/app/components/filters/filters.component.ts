@@ -22,7 +22,7 @@ export class FiltersComponent implements OnInit {
   ngOnInit() {
     this.fsService.$selectedFilter.subscribe((filter) => {
       this.serviceType = filter;
-    })
+    });
   }
 
   public changeFilter(serviceType: EServiceType) {

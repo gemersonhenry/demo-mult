@@ -10,6 +10,8 @@ import { HogarComponent } from './views/hogar/hogar.component';
 import { NormalButtonComponent } from './components/normal-button/normal-button.component';
 import { LinkButtonComponent } from './components/link-button/link-button.component';
 import { FiltersComponent } from './components/filters/filters.component';
+import { CardComponent } from './components/card/card.component';
+import { ListComponent } from './components/list/list.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { FiltersComponent } from './components/filters/filters.component';
     HogarComponent,
     NormalButtonComponent,
     LinkButtonComponent,
-    FiltersComponent
+    FiltersComponent,
+    CardComponent,
+    ListComponent
   ],
   imports: [
     BrowserModule,
