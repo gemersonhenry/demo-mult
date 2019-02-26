@@ -14,6 +14,10 @@ export class ServiceTypeStoreService {
     private store: StoreService
   ) { }
 
+  public get nextServiceId(): number {
+    return this.store.services.length;
+  }
+
   public get $todosServices(): Observable<ServiceModel[]> {
     return this.store.$services;
   }

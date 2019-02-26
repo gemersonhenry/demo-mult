@@ -14,6 +14,7 @@ import { CardComponent } from './components/card/card.component';
 import { ListComponent } from './components/list/list.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormComponent } from './components/form/form.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { FormComponent } from './components/form/form.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

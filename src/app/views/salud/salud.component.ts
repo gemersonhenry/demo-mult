@@ -17,7 +17,6 @@ export class SaludComponent implements OnInit {
 
   ngOnInit() {
     this.stStore.$saludServices.subscribe((services) => {
-      console.log('salud component', services);
       this.services = services;
     });
   }

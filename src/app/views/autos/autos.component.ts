@@ -17,7 +17,6 @@ export class AutosComponent implements OnInit {
 
   ngOnInit() {
     this.stStore.$autosServices.subscribe((services) => {
-      console.log('autos component', services);
       this.services = services;
     });
   }

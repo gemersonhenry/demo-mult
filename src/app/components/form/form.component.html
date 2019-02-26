@@ -1,26 +1,38 @@
-<div class="card" style="width: 18rem;">
-  <div class="card-body">
-    <form>
-      <div class="form-group">
-        <label for="exampleInputEmail1">Nombre</label>
-        <input type="email" class="form-control"
-          placeholder="Nombre">
+<div class="row">
+  <div class="col">
+    <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <form [formGroup]="form">
+          <div class="form-group">
+            <label for="exampleInputEmail1">Nombre</label>
+            <input type="text" class="form-control" placeholder="Nombre"
+              formControlName="name">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Descripcion</label>
+            <input type="text" class="form-control" placeholder="Descripcion"
+              formControlName="description">
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlSelect2">Tipo de servicio</label>
+            <select class="form-control" formControlName="serviceType">
+              <option value="autos">Autos</option>
+              <option value="hogar">Hogar</option>
+              <option value="salud">Salud</option>
+            </select>
+          </div>
+        </form>
       </div>
-      <div class="form-group">
-        <label for="exampleInputPassword1">Descripcion</label>
-        <input type="password" class="form-control" placeholder="Descripcion">
+      <div class="card-footer text-muted">
+        <app-normal-button buttonType="success"
+          buttonText="Grabar"
+          (clickEvent)="guardarInformacion()">
+        </app-normal-button>
+        <app-normal-button buttonType="danger"
+          buttonText="Cancelar"
+          (clickEvent)="cancelarCambios()">
+        </app-normal-button>
       </div>
-      <div class="form-group">
-        <label for="exampleFormControlSelect2">Tipo de servicio</label>
-        <select multiple class="form-control">
-          <option>Autos</option>
-          <option>Hogar</option>
-          <option>Salud</option>
-        </select>
-      </div>
-    </form>
-  </div>
-  <div class="card-footer text-muted">
-    
+    </div>
   </div>
 </div>

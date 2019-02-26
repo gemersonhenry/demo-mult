@@ -17,7 +17,7 @@ export class TodosComponent implements OnInit {
 
   ngOnInit() {
     this.stStore.$todosServices.subscribe((services) => {
-      console.log('salud component', services);
+      console.log('todos component', services);
       this.services = services;
     });
   }

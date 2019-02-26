@@ -17,7 +17,6 @@ export class HogarComponent implements OnInit {
 
   ngOnInit() {
     this.stStore.$hogarServices.subscribe((services) => {
-      console.log('hogar component', services);
       this.services = services;
     });
   }

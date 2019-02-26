@@ -18,12 +18,12 @@ export class NormalButtonComponent implements OnInit {
 
   public get outlineButton() {
     return {
-      'btn btn-outline-success': this.buttonType = 'success',
-      'btn btn-outline-primary': this.buttonType = 'primary',
-      'btn btn-outline-secondary': this.buttonType = 'secondary',
-      'btn btn-outline-danger': this.buttonType = 'danger',
-      'btn btn-outline-warning': this.buttonType = 'warning',
-      'btn btn-outline-info': this.buttonType = 'info',
+      'btn btn-outline-success': this.buttonType === 'success',
+      'btn btn-outline-primary': this.buttonType === 'primary',
+      'btn btn-outline-secondary': this.buttonType === 'secondary',
+      'btn btn-outline-danger': this.buttonType === 'danger',
+      'btn btn-outline-warning': this.buttonType === 'warning',
+      'btn btn-outline-info': this.buttonType === 'info',
     };
   }
 
