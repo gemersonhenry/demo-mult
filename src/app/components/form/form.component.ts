@@ -64,6 +64,7 @@ export class FormComponent implements OnInit {
       const position = service.id - 1;
       this.crud.updateService(position, service);
     }
+    this.formService.resetPersistanceForm();
     this.id = -1;
   }
 
